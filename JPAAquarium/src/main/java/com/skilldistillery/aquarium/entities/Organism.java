@@ -8,7 +8,7 @@ import javax.persistence.Id;
 //class name matches table name in db
 
 @Entity
-public class Aquarium {
+public class Organism {
 
 	// F I E L D S
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,13 +17,13 @@ public class Aquarium {
 	private String name;
 
 	// C O N S T R U C T O R
-	public Aquarium(int id, String name) {
+	public Organism(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 
-	public Aquarium() {
+	public Organism() {
 
 	}
 

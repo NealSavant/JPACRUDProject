@@ -9,7 +9,7 @@
     </provider>
 
 		<!-- table entities here -->
-		<class>com.skilldistillery.aquarium.entities.Aquarium</class>
+		<class>com.skilldistillery.aquarium.entities.Organism</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.url"
