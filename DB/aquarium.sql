@@ -22,7 +22,11 @@ DROP TABLE IF EXISTS `organism` ;
 
 CREATE TABLE IF NOT EXISTS `organism` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `type` VARCHAR(45) NOT NULL,
+  `life_span_years` INT NULL,
+  `color` VARCHAR(45) NOT NULL,
+  `gender` ENUM('m', 'f', 'na') NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -42,7 +46,13 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `aquarium`;
-INSERT INTO `organism` (`id`, `name`) VALUES (1, 'SCOBY');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (1, 'Shrimp', 'Cherry Shrimp', 1, 'Red', 'm');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (2, 'Shrimp', 'Cherry Srhimp', 1, 'Orange', 'm');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (3, 'Fish', 'Guppy', 3, 'Yellow', 'm');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (4, 'Fish', 'Guppy', 3, 'Black', 'f');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (5, 'Fish', 'Guppy', 3, 'Orange', 'm');
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (6, 'Snail', 'Ramshorn Snail', 1, 'Brown', NULL);
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (7, 'Snail', 'Trumpet Snail', 1, 'Brown', NULL);
 
 COMMIT;
 
