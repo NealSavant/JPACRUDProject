@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `organism` (
   `type` VARCHAR(45) NOT NULL,
   `life_span_years` INT NULL,
   `color` VARCHAR(45) NOT NULL,
-  `gender` ENUM('m', 'f', 'na') NULL,
+  `gender` ENUM('M', 'F', 'NA') NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -51,8 +51,8 @@ INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gende
 INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (3, 'Fish', 'Guppy', 3, 'Yellow', 'm');
 INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (4, 'Fish', 'Guppy', 3, 'Black', 'f');
 INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (5, 'Fish', 'Guppy', 3, 'Orange', 'm');
-INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (6, 'Snail', 'Ramshorn Snail', 1, 'Brown', NULL);
-INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (7, 'Snail', 'Trumpet Snail', 1, 'Brown', NULL);
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (6, 'Snail', 'Ramshorn Snail', 1, 'Brown', DEFAULT);
+INSERT INTO `organism` (`id`, `name`, `type`, `life_span_years`, `color`, `gender`) VALUES (7, 'Snail', 'Trumpet Snail', 1, 'Brown', DEFAULT);
 
 COMMIT;
 
