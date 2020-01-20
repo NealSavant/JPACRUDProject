@@ -1,10 +1,19 @@
 @charset "UTF-8";
 
-
-#wrapper{
+#wrapper {
 	margin: auto;
 	width: 100%;
 }
+
+article #tank{
+	background-image: url("/img/fishtank.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	padding: 0;
+}
+
 header {
 	margin-top: 0px;
 	background-color: #00ff99;
@@ -16,9 +25,10 @@ header {
 	height: 100px;
 	width: 100%;
 	box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+	background-color: #00ff99;
 }
 
-footer{
+footer {
 	margin-bottom: 0px;
 	position: absolute;
 	bottom: 0;
@@ -33,6 +43,7 @@ footer{
 	font-style: italic;
 	text-align: center;
 	font-family: "Georgia";
+	background-color: #00ff99;
 }
 
 html, body {
@@ -45,20 +56,21 @@ header a:hover, a:link, a:active, a:visited {
 }
 
 nav a:link, a:visited {
-  background-color: #6699ff;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+	background-color: #6699ff;
+	color: black;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
 nav a:hover, a:active {
-  background-color: #3366ff;
+	background-color: #3366ff;
 }
 
-nav{
+nav {
 	margin-top: 0px;
+	height: 100%;
 	line-height: 1.25em;
 	font-weight: bold;
 	display: table-cell;
@@ -66,31 +78,32 @@ nav{
 	text-align: left;
 	float: left;
 	padding: 10px;
+	line-height: 1.25em;
 }
-	nav li{
-		list-style: none;
-		font-size: 1.25em;
-		margin: 0 0 20px 0;
-	}
-	nav ul{
-		padding: 0;
-	}
-	nav a{
-		text-decoration: none;
-	}
-	
-	
-	
-body { 
+
+nav li {
+	list-style: none;
+	font-size: 1.25em;
+	margin: 0 0 20px 0;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+body {
 	background: linear-gradient(#E0E0E0, #757575);
-	color:black;
+	color: black;
 	font-family: "Helvetica";
 }
 
-article{
+article {
 	display: table-cell;
 	padding: 0px;
 	padding-left: 10px;
+	width: 100%;
 }
-	
-	

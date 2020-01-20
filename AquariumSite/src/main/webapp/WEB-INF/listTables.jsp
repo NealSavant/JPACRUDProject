@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    
     
 <!DOCTYPE html>
 <html>
@@ -24,12 +26,31 @@
   	</nav>
   		
   	<article>
-  	
-  	<div id="tank"></div>
-  	
-  	<h2>Aquarium Database</h2>
-  	<p>Keep track of the animals in your aquarium!
-  	Create, update, and delete entries into the database.</p>
+  		<h2>List of Organisms</h2>
+  		<table class="table table-striped">
+		<thead class="thead thead-dark">
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+				<th>Life Span</th>
+				<th>Color</th>
+				<th>Gender</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="o" items="${organisms}">
+				<tr>
+					<td>${o.name}</td>
+					<td>${o.type}</td>
+					<td>${o.lifeSpan}</td>
+					<td>${o.color}</td>
+					<td>${o.gender}</td>
+				</tr>
+			</c:forEach>
+			
+		</tbody>
+		</table>
+		
   	</article>
   	
   	<footer>

@@ -25,12 +25,14 @@
   		
   	<article>
   	
-  	<div id="tank"></div>
-  	
-  	<h2>Aquarium Database</h2>
-  	<p>Keep track of the animals in your aquarium!
-  	Create, update, and delete entries into the database.</p>
+  	<!-- <video autoplay muted loop id="video">
+  		<source src="img/resized_fish.mp4" type="video/mp4">
+	</video> -->
+  
   	</article>
+  	
+  	
+  	
   	
   	<footer>
   		<a> A web page by Neal Savant</a>
