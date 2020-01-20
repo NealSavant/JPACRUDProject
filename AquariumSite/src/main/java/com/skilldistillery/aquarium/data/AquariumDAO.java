@@ -7,4 +7,5 @@ import com.skilldistillery.aquarium.entities.Organism;
 public interface AquariumDAO {
 	Organism findById(int id);
 	List<Organism> findAll();
+	void addOrganism(Organism o);
 }

@@ -28,4 +28,12 @@ public class AquariumDAOImpl implements AquariumDAO{
 		return organisms;
 	}
 
+	@Override
+	public void addOrganism(Organism o) {
+		System.out.println("Begin adding new organism");
+		em.persist(o);
+		em.flush();
+		System.out.println("Addition completed");
+	}
+
 }

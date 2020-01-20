@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    
     
 <!DOCTYPE html>
 <html>
@@ -25,9 +27,36 @@
   		
   	<article>
   	
-  	<!-- <video autoplay muted loop id="video">
-  		<source src="img/resized_fish.mp4" type="video/mp4">
-	</video> -->
+  	<form action="addOrganism.do" method="Post">
+			<fieldset>
+				<legend>Create Organism</legend>
+				<div class="form-group">
+					<label for="name">Name: </label>
+					<input type="text" name="name" id="name" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="type">Type: </label>
+					<input type="text" name="type" id="type" class="form-control" required/>
+				</div>
+				<div class="form-group">
+					 <label for="lifeSpan">Life Span (Years): </label>
+					 <input type="number" name="lifeSpan" id="lifeSpan" class="form-control" required/>
+				</div>
+				<div class="form-group">
+					<label for="rentalDuration">Color: </label>
+					<input type="text" name="color" id="color" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender" class="btn btn-secondary dropdown-toggle" required>
+						<option value="M">M</option>
+						<option value="F">F</option>
+						<option value="NA">NA</option>
+					</select>				
+				</div>
+				<input type="submit" value="Add Organism" class="btn btn-primary"/>
+			</fieldset>
+		</form>
   
   	</article>
   	
