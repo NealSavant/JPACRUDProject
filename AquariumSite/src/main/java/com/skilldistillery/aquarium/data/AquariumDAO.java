@@ -8,4 +8,6 @@ public interface AquariumDAO {
 	Organism findById(int id);
 	List<Organism> findAll();
 	void addOrganism(Organism o);
+	void deleteOrganism(Organism o);
+	Organism updateOrganism(Organism o);
 }

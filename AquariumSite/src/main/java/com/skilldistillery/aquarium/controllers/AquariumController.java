@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.skilldistillery.aquarium.data.AquariumDAO;
 import com.skilldistillery.aquarium.entities.Organism;
@@ -49,13 +49,16 @@ public class AquariumController {
 		mv.setViewName("home");
 		return mv;
 	}
-
-//	@RequestMapping(path="getOrganism.do")
-//	public String showFilm(@RequestParam("id") Integer id, Model model) {
-//		Organism organism = null;
-////		organism = dao.findById(id);
-//		model.addAttribute("organism", organism);
-//		return "listTables";
-//	}
+	
+	//delete
+	//delete film
+		@RequestMapping(path = "deleteOrganism.do", method = RequestMethod.POST)
+		public String deleteOrganism(@RequestParam("organism") int id ) {
+			Organism o = dao.findById(id);
+			dao.deleteOrganism(o);
+			return "home";
+		}
+	
+	
 
 }

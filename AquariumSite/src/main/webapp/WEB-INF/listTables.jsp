@@ -20,7 +20,6 @@
 	<nav>
   		<ul>
  	 	<li><a href="createPage.do">Add Critter to Database</a></li>
- 		<li><a href="searchPage.do">Search for a Critter</a></li>
   		<li><a href="listPage.do">List all Critters</a></li>
  		</ul>
   	</nav>
@@ -47,8 +46,18 @@
 					<td>${o.lifeSpan}</td>
 					<td>${o.color}</td>
 					<td>${o.gender}</td>
-					<td><input type="submit" value="Update" class="btn btn-primary"/></td>
-					<td><input type="submit" value="Delete" class="btn btn-danger"/></td>
+					<td>
+						<form action ="updatePage.do" method = "POST">
+						<input type="hidden" value="${o}" name = "organism"/>
+						<input type="submit" value="Update" class="btn btn-primary"/>
+						</form>
+					</td>
+					<td>
+						<form action ="deleteOrganism.do" method = "POST">
+						<input type="hidden" value="${o.id}" name = "organism"/>
+						<input type="submit" value="Delete" class="btn btn-danger"/>
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
 			

@@ -20,7 +20,6 @@
 	<nav>
   		<ul>
  	 	<li><a href="createPage.do">Add Critter to Database</a></li>
- 		<li><a href="searchPage.do">Search for a Critter</a></li>
   		<li><a href="listPage.do">List all Critters</a></li>
  		</ul>
   	</nav>

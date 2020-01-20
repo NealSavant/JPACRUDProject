@@ -19,7 +19,6 @@
 	<nav>
   		<ul>
  	 	<li><a href="createPage.do">Add Critter to Database</a></li>
- 		<li><a href="searchPage.do">Search for a Critter</a></li>
   		<li><a href="listPage.do">List all Critters</a></li>
  		</ul>
   	</nav>
@@ -28,9 +27,8 @@
   	
   	<div id="tank"></div>
   	
-  	<h2>Aquarium Database</h2>
-  	<p>Keep track of the animals in your aquarium!
-  	Create, update, and delete entries into the database.</p>
+  	<h4>Keep track of the animals in your aquarium!<br>
+  	Create, update, and delete entries into the database.</h4>
   	</article>
   	
   	<footer>

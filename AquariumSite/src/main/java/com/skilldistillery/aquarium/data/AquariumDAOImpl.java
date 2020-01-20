@@ -36,4 +36,17 @@ public class AquariumDAOImpl implements AquariumDAO{
 		System.out.println("Addition completed");
 	}
 
+	@Override
+	public void deleteOrganism(Organism o) {
+		System.out.println("Deleting " + o);
+		em.remove(o);
+		em.flush();
+	}
+
+	@Override
+	public Organism updateOrganism(Organism o) {
+		//TODO
+		return null;
+	}
+
 }
