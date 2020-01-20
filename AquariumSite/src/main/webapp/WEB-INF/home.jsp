@@ -13,7 +13,7 @@
 <div id="wrapper">
 
 	<header>
-		<h1> <a href="/">Aquarium Database</a></h1>
+		<h1> <a href="home.do">Aquarium Database</a></h1>
 	</header>
 	
 	<nav>

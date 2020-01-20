@@ -19,7 +19,7 @@ public class AquariumController {
 	@Autowired
 	private AquariumDAO dao;
 
-	@RequestMapping(path = { "/", "home.do" })
+	@RequestMapping(path = "home.do")
 	public String home() {
 		return "home";
 	}

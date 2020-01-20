@@ -6,7 +6,7 @@
 }
 
 article #tank{
-	background-image: url("/img/fishtank.jpg");
+	background-image: url("../img/fishtank.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100%;

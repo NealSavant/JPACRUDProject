@@ -2,12 +2,17 @@ package com.skilldistillery.aquarium;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class AquariumSiteApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(AquariumSiteApplication.class, args);
-	}
-
+public class AquariumSiteApplication extends SpringBootServletInitializer {
+  @Override
+  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+    return application.sources(AquariumSiteApplication.class);
+  }
+  public static void main(String[] args) {
+    SpringApplication.run(AquariumSiteApplication.class, args);
+  }
 }
+

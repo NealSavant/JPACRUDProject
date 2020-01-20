@@ -17,6 +17,8 @@ Bind variables ensure protection from SQL injection.
 
 Referential integrity among java objects and Spring integration.
 
+Consistent navigation tools in application interface.
+
 ### Technologies Used
 
 Java
