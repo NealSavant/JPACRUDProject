@@ -49,16 +49,30 @@ public class AquariumController {
 		mv.setViewName("home");
 		return mv;
 	}
+
+	// delete
+	@RequestMapping(path = "deleteOrganism.do", method = RequestMethod.POST)
+	public String deleteOrganism(@RequestParam("organism") int id) {
+		Organism o = dao.findById(id);
+		dao.deleteOrganism(o);
+		return "home";
+	}
+
+	// update organism
+	@RequestMapping(path = "updatePage.do", method = RequestMethod.POST)
+	public ModelAndView updateOrganism(@RequestParam("organism") int id) {
+		Organism o = dao.findById(id);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("o", o);//send organism to update page to keep values
+		mv.setViewName("update");
+		return mv;
+	}
 	
-	//delete
-	//delete film
-		@RequestMapping(path = "deleteOrganism.do", method = RequestMethod.POST)
-		public String deleteOrganism(@RequestParam("organism") int id ) {
-			Organism o = dao.findById(id);
-			dao.deleteOrganism(o);
-			return "home";
-		}
-	
+	@RequestMapping(path = "updateOrganism.do", method = RequestMethod.POST)
+	public String updateOrganism(@RequestParam("id")int id, Organism o) {
+		dao.updateOrganism(o, id);
+		return "home";
+	}
 	
 
 }

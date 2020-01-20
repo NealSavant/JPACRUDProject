@@ -9,5 +9,5 @@ public interface AquariumDAO {
 	List<Organism> findAll();
 	void addOrganism(Organism o);
 	void deleteOrganism(Organism o);
-	Organism updateOrganism(Organism o);
+	void updateOrganism(Organism o, int id);
 }

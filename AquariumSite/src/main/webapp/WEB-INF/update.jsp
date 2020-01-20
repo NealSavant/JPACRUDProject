@@ -19,41 +19,42 @@
 	
 	<nav>
   		<ul>
- 	 	<li><a href="createPage.do">Add Critter to Database</a></li>
-  		<li><a href="listPage.do">List all Critters</a></li>
+ 	 	<li><a href="createPage.do">Add Critter to Organism</a></li>
+  		<li><a href="listPage.do">List all Organisms</a></li>
  		</ul>
   	</nav>
   		
   	<article>
   	
-  	<form action="addOrganism.do" method="Post">
+  	<form action="updateOrganism.do" method="Post">
 			<fieldset>
-				<legend>Create Organism</legend>
+				<legend>Update Organism</legend>
 				<div class="form-group">
 					<label for="name">Name: </label>
-					<input type="text" name="name" id="name" class="form-control" required />
+					<input type="text" value = "${o.name}" name="name" id="name" class="form-control" required />
 				</div>
 				<div class="form-group">
 					<label for="type">Type: </label>
-					<input type="text" name="type" id="type" class="form-control" required/>
+					<input type="text" value = "${o.type}"  name="type" id="type" class="form-control" required/>
 				</div>
 				<div class="form-group">
 					 <label for="lifeSpan">Life Span (Years): </label>
-					 <input type="number" name="lifeSpan" id="lifeSpan" class="form-control" required/>
+					 <input type="number" value = "${o.lifeSpan}"  name="lifeSpan" id="lifeSpan" class="form-control" required/>
 				</div>
 				<div class="form-group">
 					<label for="rentalDuration">Color: </label>
-					<input type="text" name="color" id="color" class="form-control" required />
+					<input type="text" value = "${o.color}"  name="color" id="color" class="form-control" required />
 				</div>
 				<div class="form-group">
 					<label for="gender">Gender</label>
-					<select name="gender" id="gender" class="btn btn-secondary dropdown-toggle" required>
+					<select name="gender" selected = "${o.gender}"  id="gender" class="btn btn-secondary dropdown-toggle" required>
 						<option value="M">M</option>
 						<option value="F">F</option>
 						<option value="NA">NA</option>
 					</select>				
 				</div>
-				<input type="submit" value="Add Organism" class="btn btn-primary"/>
+				<input type = "hidden" name = "id" value = "${o.id}"/>
+				<input type="submit" value="Update Organism" class="btn btn-primary"/>
 			</fieldset>
 		</form>
   
