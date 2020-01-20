@@ -19,7 +19,7 @@
 	
 	<nav>
   		<ul>
- 	 	<li><a href="createPage.do">Add Critter to Organism</a></li>
+ 	 	<li><a href="createPage.do">Add Organism to Aquarium</a></li>
   		<li><a href="listPage.do">List all Organisms</a></li>
  		</ul>
   	</nav>
