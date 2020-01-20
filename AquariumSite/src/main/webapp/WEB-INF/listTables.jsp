@@ -35,6 +35,8 @@
 				<th>Life Span</th>
 				<th>Color</th>
 				<th>Gender</th>
+				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -45,6 +47,8 @@
 					<td>${o.lifeSpan}</td>
 					<td>${o.color}</td>
 					<td>${o.gender}</td>
+					<td><input type="submit" value="Update" class="btn btn-primary"/></td>
+					<td><input type="submit" value="Delete" class="btn btn-danger"/></td>
 				</tr>
 			</c:forEach>
 			
