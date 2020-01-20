@@ -53,8 +53,8 @@ Update CSS for more seamless user experience.
 
 
 #### Table List Page
-![Table List] (<https://user-images.githubusercontent.com/55298338/72703428-c6dc5500-3b12-11ea-9374-8e3addff797f.png>)
+![Table List](<https://user-images.githubusercontent.com/55298338/72703428-c6dc5500-3b12-11ea-9374-8e3addff797f.png>)
 
 
 #### Create Page
-![Create Page] (<https://user-images.githubusercontent.com/55298338/72703488-f25f3f80-3b12-11ea-84a8-02f1a7dabab2.png>)
+![Create Page](<https://user-images.githubusercontent.com/55298338/72703488-f25f3f80-3b12-11ea-84a8-02f1a7dabab2.png>)
